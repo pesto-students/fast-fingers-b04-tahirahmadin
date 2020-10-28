@@ -81,8 +81,8 @@ export default function GameScreen(props) {
             <img src="img/icon-awesome-gamepad.png" class="Icon-material-person" />
             <h3 className="player_name_777">LEVEL: {props.level}</h3>
           </div>
-          <div className="Rectangle-10 mt-5">
-            <div className="text-center mt-3">
+          <div className="Rectangle-10 mt-5 d-none d-md-block">
+            <div className="text-center mt-3 ">
               <h4 className="SCORE-BOARD">SCORE BOARD</h4>
               <div className="p-4">
                 {props.scoresList.map((score, index) => {
