@@ -279,4 +279,40 @@
   letter-spacing: normal;
   text-align: left;
   color: #ff5155;
+  cursor: pointer;
+}
+.time {
+  width: 111px;
+  height: 57px;
+
+  font-size: 57px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.backgroundGradient {
+  background-size: cover;
+  background-image: linear-gradient(to bottom, #063c47, #000000);
+  height: 100vh;
+}
+
+.backgroundPattern {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /*if you want to crop the image*/
+}
+
+.backgroundPattern:before {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: url('/img/group-243.png');
+  opacity: 0.05;
 }

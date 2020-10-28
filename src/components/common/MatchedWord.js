@@ -4,8 +4,6 @@ export default function MatchedWord(props) {
   const compare = () => {
     let testWordArray = props.testWord.split('');
     let enteredWordArray = props.enteredWord.split('');
-    console.log(testWordArray);
-    console.log(enteredWordArray);
     let data = '';
     data = props.testWord.split('').map((element, index) => {
       if (enteredWordArray[index]) {
