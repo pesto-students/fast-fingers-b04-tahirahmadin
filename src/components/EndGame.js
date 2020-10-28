@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function EndGame(props) {
+  const scoresList = localStorage.getItem('scores');
   return (
     <div className="p-5">
       <div className="row">
@@ -8,11 +9,11 @@ export default function EndGame(props) {
           <div>
             <div className="d-flex justify-content-start">
               <img src="img/icon-material-person.png" class="Icon-material-person" />
-              <h3 className="player_name_777">TAHIR AHMAD</h3>
+              <h3 className="player_name_777">{localStorage.getItem('username')}</h3>
             </div>
             <div className="d-flex justify-content-start">
               <img src="img/icon-awesome-gamepad.png" class="Icon-material-person" />
-              <h3 className="player_name_777">LEVEL: MEDIUM</h3>
+              <h3 className="player_name_777">LEVEL: {props.level}</h3>
             </div>
           </div>
 
@@ -27,8 +28,8 @@ export default function EndGame(props) {
         <div
           className="col-md-6 d-flex flex-column justify-content-center"
           style={{ height: '90vh', alignItems: 'center' }}>
-          <div className="SCORE-GAME-5">SCORE : GAME 5</div>
-          <div className="final-score mt-5">2:17</div>
+          <div className="SCORE-GAME-5">SCORE : GAME {props.scoresList.length}</div>
+          <div className="final-score mt-5">{props.scoresList[props.scoresList.length - 1].toFixed(2)}</div>
           <div className="New-High-Score mt-5">New High Score</div>
 
           <div style={{ marginTop: 70 }}>
@@ -40,7 +41,9 @@ export default function EndGame(props) {
                 class="Icon-open-reload"
               />
 
-              <h5 className="PLAY-AGAIN">PLAY AGAIN</h5>
+              <h5 className="PLAY-AGAIN" onClick={() => props.setScreen(1)}>
+                PLAY AGAIN
+              </h5>
             </div>
           </div>
         </div>

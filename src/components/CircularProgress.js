@@ -6,17 +6,17 @@ import './ProgressBar.css';
 const ProgressBar = (props) => {
   const [offset, setOffset] = useState(0);
   const circleRef = useRef(null);
-  const { size, progress, strokeWidth, circleOneStroke, circleTwoStroke } = props;
+  const { size, progress, strokeWidth, circleOneStroke, circleTwoStroke, time } = props;
 
   const center = size / 2;
   const radius = size / 2 - strokeWidth / 2;
   const circumference = 2 * Math.PI * radius;
 
   useEffect(() => {
-    const progressOffset = ((100 - progress) / 100) * circumference;
+    const progressOffset = ((progress - time) / progress) * circumference;
     setOffset(progressOffset);
     circleRef.current.style = 'transition: stroke-dashoffset ms ease-in-out;';
-  }, [setOffset, circumference, progress, offset]);
+  }, [setOffset, circumference, progress, offset, time]);
 
   return (
     <>
@@ -41,7 +41,7 @@ const ProgressBar = (props) => {
           strokeDashoffset={offset}
         />
         <text x={`${center}`} y={`${center}`} className="svg-circle-text">
-          {props.time} s
+          {props.time.toFixed(2)}
         </text>
       </svg>
     </>

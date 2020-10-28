@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
 export default function StartGame(props) {
+  function handleInput(e) {
+    props.setUsername(e.target.value);
+    localStorage.setItem('username', e.target.value);
+  }
   return (
     <div>
       <div className="d-flex flex-column justify-content-between" style={{ height: '80vh', marginTop: 50 }}>
@@ -32,15 +36,18 @@ export default function StartGame(props) {
               type="text"
               class="form-control Rectangle-2 "
               placeholder="TYPE YOUR NAME"
-              onChange={(e) => props.setUsername(e.target.value)}
+              onChange={(e) => handleInput(e)}
             />
           </div>
           <div class="d-flex flex-row justify-content-center mt-3">
-            <select class="custom-select Rectangle-5" id="inputGroupSelect01">
+            <select
+              class="custom-select Rectangle-5"
+              id="inputGroupSelect01"
+              onChange={(e) => props.setLevel(e.target.value)}>
               <option selected>DIFFICULTY LEVEL</option>
-              <option value="1">EASY</option>
-              <option value="2">MEDIUM</option>
-              <option value="3">HARD</option>
+              <option value="EASY">EASY</option>
+              <option value="MEDIUM">MEDIUM</option>
+              <option value="HARD">HARD</option>
             </select>
           </div>
         </div>
