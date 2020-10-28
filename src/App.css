@@ -3,7 +3,7 @@
 }
 
 .fast-fingers {
-  font-size: 81px;
+  font-size: 70px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -12,9 +12,20 @@
   text-align: center;
   color: #ff5155;
 }
-
+@media only screen and (max-width: 600px) {
+  .fast-fingers {
+    font-size: 50px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff5155;
+  }
+}
 .the-ultimate-typing-game {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -24,6 +35,20 @@
   color: #ff5155;
   margin-left: 20px;
   margin-right: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .the-ultimate-typing-game {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5155;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .Line-1 {
   width: 125.6px;
@@ -35,9 +60,10 @@
   height: 0;
   border: solid 2px #ff5155;
 }
+
 .Rectangle-2 {
-  width: 622px;
-  height: 90px;
+  width: 600px;
+  height: 80px;
   opacity: 0.59;
   border-radius: 15px;
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
@@ -52,10 +78,28 @@
   text-align: left;
   color: #032228;
 }
-
+@media only screen and (max-width: 600px) {
+  .Rectangle-2 {
+    width: 500px;
+    height: 50px;
+    opacity: 0.59;
+    border-radius: 15px;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #032228;
+  }
+}
 .Rectangle-5 {
-  width: 622px;
-  height: 90px;
+  width: 600px;
+  height: 80px;
   border-radius: 15px;
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
   border: solid 1px #ffffff;
@@ -69,13 +113,30 @@
   background-color: transparent;
   color: #97a5a7;
 }
-
+@media only screen and (max-width: 600px) {
+  .Rectangle-5 {
+    width: 500px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
+    border: solid 1px #ffffff;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: transparent;
+    color: #97a5a7;
+  }
+}
 .start-game {
-  width: 307px;
-  height: 48px;
+  width: 320px;
+  height: 36px;
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
   margin-top: 18px;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -85,9 +146,26 @@
   color: #ff5155;
   cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+  .start-game {
+    width: 307px;
+    height: 40px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+    margin-top: 18px;
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5155;
+    cursor: pointer;
+  }
+}
 
 .player_name_777 {
-  font-size: 44px;
+  font-size: 35px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -97,16 +175,37 @@
   color: #ff5155;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 600px) {
+  .player_name_777 {
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5155;
+    text-transform: uppercase;
+  }
+}
 .Icon-material-person {
-  width: 40.7px;
-  height: 40.7px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
   margin-right: 20px;
   margin-top: 5px;
 }
-
+@media only screen and (max-width: 600px) {
+  .Icon-material-person {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+}
 .fast-fingers-title {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -117,7 +216,7 @@
 }
 .SCORE-0030 {
   width: 291px;
-  height: 44px;
+  height: 40px;
 
   font-size: 44px;
   font-weight: normal;
@@ -130,12 +229,12 @@
 }
 .Rectangle-10 {
   width: 346px;
-  height: 693px;
+  height: 500px;
   border-radius: 15px;
   border: solid 3px #ff5155;
 }
 .SCORE-BOARD {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -146,9 +245,9 @@
 }
 .Game-1-114 {
   width: 198px;
-  height: 30px;
+  height: 25px;
 
-  font-size: 30px;
+  font-size: 25px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -159,7 +258,7 @@
 }
 .PERSONAL-BEST {
   width: 91px;
-  height: 11px;
+  height: 10px;
   font-family: Gotham;
   font-size: 11px;
   font-weight: normal;
@@ -170,10 +269,11 @@
   text-align: left;
   color: #ff5155;
 }
+
 .window {
-  height: 92px;
+  height: 80px;
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
-  font-size: 92px;
+  font-size: 80px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -183,22 +283,47 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 600px) {
+  .window {
+    height: 50px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+    font-size: 50px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
 .window-correct {
   color: #54ba18;
 }
 .Rectangle-9 {
-  width: 622px;
-  height: 90px;
+  width: 600px;
+  height: 80px;
   opacity: 0.59;
   border-radius: 15px;
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
   background-color: #ffffff;
 }
+@media only screen and (max-width: 600px) {
+  .Rectangle-9 {
+    width: 300px;
+    height: 50px;
+    opacity: 0.59;
+    border-radius: 15px;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
+  }
+}
 .timer {
   width: 111px;
   height: 57px;
 
-  font-size: 57px;
+  font-size: 50px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -208,11 +333,11 @@
   color: #ffffff;
 }
 .quit {
-  width: 112px;
-  height: 47px;
+  width: 100px;
+  height: 40px;
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
 
-  font-size: 47px;
+  font-size: 44px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -222,11 +347,28 @@
   color: #ff5155;
   cursor: pointer;
 }
-.SCORE-GAME-5 {
-  width: 572px;
-  height: 70px;
+@media only screen and (max-width: 600px) {
+  .quit {
+    width: 112px;
+    height: 30px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
 
-  font-size: 70px;
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5155;
+    cursor: pointer;
+  }
+}
+.SCORE-GAME-5 {
+  width: 550px;
+  height: 60px;
+
+  font-size: 60px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -234,12 +376,27 @@
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+}
+@media only screen and (max-width: 600px) {
+  .SCORE-GAME-5 {
+    width: 500px;
+    height: 40px;
+
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
 }
 .final-score {
   width: 230px;
   height: 118px;
 
-  font-size: 118px;
+  font-size: 100px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -248,9 +405,24 @@
   text-align: center;
   color: #ffffff;
 }
+@media only screen and (max-width: 600px) {
+  .final-score {
+    width: 230px;
+    height: 170px;
+
+    font-size: 70px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+}
 .New-High-Score {
   width: 383px;
-  height: 53px;
+  height: 50px;
 
   font-size: 53px;
   font-weight: normal;
@@ -261,14 +433,38 @@
   text-align: center;
   color: #ffffff;
 }
+@media only screen and (max-width: 600px) {
+  .New-High-Score {
+    width: 300px;
+    height: 35px;
+
+    font-size: 35px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+}
 .Icon-open-reload {
-  width: 52.5px;
-  height: 52.6px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .Icon-open-reload {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-top: 10px;
+  }
 }
 .PLAY-AGAIN {
   width: 313px;
-  height: 54px;
+  height: 50px;
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
   margin-left: 20px;
   font-size: 54px;
@@ -281,11 +477,29 @@
   color: #ff5155;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .PLAY-AGAIN {
+    width: 300px;
+    height: 34px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+    margin-left: 20px;
+    font-size: 34px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5155;
+    cursor: pointer;
+  }
+}
 .time {
   width: 111px;
-  height: 57px;
+  height: 50px;
 
-  font-size: 57px;
+  font-size: 50px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;

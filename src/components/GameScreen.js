@@ -81,10 +81,10 @@ export default function GameScreen(props) {
             <img src="img/icon-awesome-gamepad.png" class="Icon-material-person" />
             <h3 className="player_name_777">LEVEL: {props.level}</h3>
           </div>
-          <div className="Rectangle-10 mt-5">
-            <div className="text-center mt-3">
+          <div className="Rectangle-10 mt-5 d-none d-md-block">
+            <div className="text-center mt-3 ">
               <h4 className="SCORE-BOARD">SCORE BOARD</h4>
-              <div className="p-4">
+              <div className="p-2">
                 {props.scoresList.map((score, index) => {
                   return Math.max(...props.scoresList) !== score ? (
                     <p className="Game-1-114">
@@ -104,11 +104,7 @@ export default function GameScreen(props) {
           </div>
           <div className="mt-3">
             <div class="d-flex flex-row justify-content-start">
-              <img
-                src="img/icon-metro-cross.png"
-                srcset="img/icon-awesome-play@2x.png 2x,
-             img/icon-awesome-play@3x.png 3x"
-                class="Icon-awesome-play"></img>
+              <img src="img/icon-metro-cross.png" class="Icon-open-reload" />
 
               <div>
                 <h5 className="start-game" onClick={quitingGame}>
