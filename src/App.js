@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import FastFingers from './screens/FastFingers';
 
 function App() {
   return (
     <div className="App">
-      <h1>Fast Fingers </h1>
+      <FastFingers />
     </div>
   );
 }
