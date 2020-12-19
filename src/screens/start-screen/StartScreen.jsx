@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function StartGame(props) {
+export default function StartScreen(props) {
   function handleInput(e) {
     props.setUsername(e.target.value);
     localStorage.setItem('username', e.target.value);
@@ -12,9 +12,7 @@ export default function StartGame(props) {
           <div className="mt-5">
             <img
               src="img/icon-awesome-keyboard.png"
-              srcset="img/icon-awesome-keyboard@2x.png 2x,
-             img/icon-awesome-keyboard@3x.png 3x"
-              class="Icon-awesome-keyboard"
+              className="Icon-awesome-keyboard"
             />
           </div>
 
@@ -28,7 +26,7 @@ export default function StartGame(props) {
             </div>
             <div>
               {' '}
-              <hr className="Line-2" />
+              <hr className="Line-1" />
             </div>
           </div>
           <div className="d-flex flex-row justify-content-center mt-5">
@@ -51,22 +49,20 @@ export default function StartGame(props) {
             </select>
           </div>
         </div>
-        <div>
-          <div class="d-flex flex-row justify-content-center">
+        <div className='mt-3'>
+          <div className="d-flex flex-row justify-content-center" >
             <img
               src="img/icon-awesome-play.png"
-              srcset="img/icon-awesome-play@2x.png 2x,
-             img/icon-awesome-play@3x.png 3x"
-              class="Icon-awesome-play"></img>
+              class="Icon-awesome-play" />
 
-            <div>
-              <h5 className="start-game" onClick={() => props.setScreen(1)}>
-                START GAME
+
+            <h5 className="start-game" onClick={() => props.setScreen(1)}>
+              START GAME
               </h5>
-            </div>
+
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

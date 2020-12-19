@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import ProgressBar from './CircularProgress';
-import MatchedWord from './common/MatchedWord';
-const dictionary = require('./../data/dictionary.json');
+import ProgressBar from './../../components/circular-timer/CircularTimer';
+import MatchedWord from './../../components/common/MatchedWord';
+const dictionary = require('./../../data/dictionary.json');
+
 export default function GameScreen(props) {
   const difficultyCalculator = () => {
     if (props.level === 'EASY') {
@@ -67,12 +68,12 @@ export default function GameScreen(props) {
 
   const quitingGame = () => {
     props.setScoresList((prevScoreList) => [...prevScoreList, score]);
-    props.setScreen(2);
+    //props.setScreen(2);
   };
   return (
     <div className="p-5">
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-md-3 col-xs-6">
           <div className="d-flex flex-row justify-content-start">
             <img src="img/icon-material-person.png" class="Icon-material-person" />
             <h3 className="player_name_777">{localStorage.getItem('username')}</h3>
@@ -91,23 +92,27 @@ export default function GameScreen(props) {
                       GAME {index}: {score.toFixed(2)}
                     </p>
                   ) : (
-                    <div>
-                      <p className="PERSONAL-BEST">PERSONAL BEST</p>
-                      <p className="Game-1-114">
-                        GAME {index}: {score.toFixed(2)}
-                      </p>
-                    </div>
-                  );
+                      <div>
+                        <p className="PERSONAL-BEST">PERSONAL BEST</p>
+                        <p className="Game-1-114">
+                          GAME {index}: {score.toFixed(2)}
+                        </p>
+                      </div>
+                    );
                 })}
               </div>
             </div>
           </div>
-          <div className="mt-3">
+
+          <div className='d-block d-sm-block d-xs-block d-md-none d-lg-none d-xl-none'> <div className="d-flex flex-row justify-content-start">
+            <h3 className="SCORE-0030">SCORE: {score.toFixed(2)}</h3>
+          </div></div>
+          <div className="mt-3 d-none d-sm-none d-xs-none d-md-block d-lg-block d-xl-block">
             <div class="d-flex flex-row justify-content-start">
               <img src="img/icon-metro-cross.png" class="Icon-open-reload" />
 
               <div>
-                <h5 className="start-game" onClick={quitingGame}>
+                <h5 className="stop-game" onClick={quitingGame}>
                   STOP GAME
                 </h5>
               </div>

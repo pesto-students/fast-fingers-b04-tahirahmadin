@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import StartGame from './StartGame';
-import GameScreen from './GameScreen';
-import EndGame from './EndGame';
+import StartGame from './start-screen/StartScreen';
+import GameScreen from './game-screen/GameScreen';
+import EndGame from './end-screen/EndScreen';
 
 export default function FastFingers() {
-  const [screen, setScreen] = useState(0);
+  const [screen, setScreen] = useState(1);
   const [level, setLevel] = useState('EASY');
   const [username, setUsername] = useState('');
   const [scoresList, setScoresList] = useState([]);

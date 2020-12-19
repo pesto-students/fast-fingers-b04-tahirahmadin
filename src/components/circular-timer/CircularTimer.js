@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 import PropTypes from 'prop-types';
-import './ProgressBar.css';
+import './CircularTimer.css';
 
 const ProgressBar = (props) => {
   const [offset, setOffset] = useState(0);

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import FastFingers from './components/FastFingers';
+import FastFingers from './screens/FastFingers';
 
 function App() {
   return (
